@@ -1,0 +1,246 @@
+body {
+    background-image: url("image/background.png");
+    background-size : cover;
+    background-attachment: fixed;
+}
+
+.round {
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    gap: 1rem;
+}
+
+.box {
+    background: #ffffff;
+    position: relative;
+    padding: 2rem;
+    cursor: default;
+}
+
+.wide-box {
+    grid-column: span 2;
+}
+
+#first-water-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(10px, auto));
+    gap: 1rem;
+}
+
+/* title logo styles */
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.header-title {
+    border-bottom: 0.2rem solid #0d50c9;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* table style */
+.fixed-table {
+    table-layout: fixed;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    padding: 0.4rem;
+}
+
+th > span {
+    display: block;
+}
+
+.unit {
+    font-size: 0.7rem;
+    display: block;
+}
+
+/* common table row with round end */
+td {
+    padding: 0.3rem 0;
+    border: 2px solid #cedae5;
+    text-align: center;
+    
+}
+
+td:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+td:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* 1st water data table head */
+.first-water-table > thead {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #1ed2e0;
+    padding: 0.2rem;
+}
+
+.first-water-table td:nth-child(1),
+.first-water-table td:nth-child(5),
+.first-water-table td:nth-child(13){
+    width: 10rem;
+}
+
+.first-water-table td:nth-child(4){
+    width: 8rem;
+}
+
+
+.first-water-table tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.first-water-table tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/*result */
+.result-wrapper {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.6rem;
+    margin: 0.25rem 0;
+    width: 30rem;
+}
+
+.result-title {
+    padding: 0rem 0.5rem ;
+    font-weight: bold;
+    flex: auto
+
+}
+
+.seperator {
+    border-right: 0.2rem solid #ffffff;
+}
+
+.result-text {
+    color: #000000;
+    background: #ffffff;
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    width: 14rem
+}
+
+.result-text > span {
+    vertical-align: middle;
+}
+
+/* result style */
+.first-result {
+    background: #11b7ce;
+}
+
+.second-result {
+    background: #0c4aa3;
+}
+
+.final-result {
+    color:#208fd3;
+}
+
+.final-result > .seperator{
+    border-color: #208fd3;
+}
+
+.final-result > .result-text  {
+    border: 3px solid #208fd3;
+}
+
+/* predict 2nd water table */
+.second-water-predict-table > caption {
+    background: #11b7ce;
+    color:#ffffff;
+    padding: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+}
+
+.second-water-predict-table th {
+    border: 2px solid #11b7ce;
+}
+
+.second-water-predict-table th:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.second-water-predict-table th:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* target 2nd water table */
+.second-water-target-table > caption {
+    background: #246cd3;
+    color:#ffffff;
+    padding: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+.second-water-target-table th {
+    border: 2px solid #246cd3;
+}
+
+.second-water-target-table th:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.second-water-target-table th:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+
+
+
+
+.values {
+    border: none;
+    width: 4rem
+}
